@@ -87,6 +87,7 @@ function App() {
                 <a href="/chatbot" className="block text-gray-300 hover:text-white transition-colors">🤖 Chatbot</a>
                 <a href="/servicos" className="block text-gray-300 hover:text-white transition-colors">🏥 Serviços</a>
                 <a href="/faq" className="block text-gray-300 hover:text-white transition-colors">❓ FAQ</a>
+                <a href="/contato" className="block text-gray-300 hover:text-white transition-colors">✉️ Contato</a>
               </div>
             </div>
             <div>
