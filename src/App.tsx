@@ -24,7 +24,7 @@ function App() {
               </div>
               <div>
                 <div className="text-xl sm:text-2xl font-bold tracking-tight">
-                  <span className="text-gradient">HC</span> Emergency Assistant
+                  <span className="text-gradient">HC</span> BRIDGE
                 </div>
                 <div className="text-xs text-gray-500 -mt-1">Assistente Virtual 24/7</div>
               </div>
@@ -72,7 +72,7 @@ function App() {
                 <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">🚨</span>
                 </div>
-                <div className="font-bold text-lg">HC Emergency Assistant</div>
+              <div className="font-bold text-lg">HC BRIDGE</div>
               </div>
               <p className="text-gray-300 text-sm leading-relaxed">
                 Assistente virtual inteligente para emergências médicas, marcação de consultas e orientações de saúde 24/7.
