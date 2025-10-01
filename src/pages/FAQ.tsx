@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 const faqs = [
   { 
     q: 'O que é o HC Emergency Assistant?', 
@@ -34,6 +36,9 @@ const faqs = [
 ]
 
 export default function FAQ() {
+  useEffect(() => {
+    document.title = 'FAQ | HC Emergency Assistant'
+  }, [])
   return (
     <section>
       <h1 className="text-3xl font-bold mb-6">FAQ</h1>
