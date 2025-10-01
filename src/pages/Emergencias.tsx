@@ -159,6 +159,12 @@ export default function Emergencias() {
                 type="text"
                 placeholder="Digite sua mensagem..."
                 className="flex-1 px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300"
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    e.preventDefault()
+                    // placeholder para envio
+                  }
+                }}
               />
               <button className="btn-secondary px-6 py-3">
                 Enviar
