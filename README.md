@@ -38,6 +38,14 @@ npm run dev
 
 ![Home](public/favicon.svg)
 
+Integrantes (fotos usadas na página):
+
+![João Vitor Lacerda](public/membros/membro1.jpg)
+
+![Murilo Fernandes Carapia](public/membros/membro2.png)
+
+![Pedro De Matos](public/membros/membro3.jpg)
+
 ## Assets
 
 - Utilizamos como favicon um arquivo em formato **SVG** (`public/favicon.svg`).
