@@ -39,5 +39,3 @@ npm run dev
 Adicione ao menos duas imagens da aplicação rodando (Home e Serviços, por exemplo):
 
 ![Home](public/favicon.svg)
-
-![Serviços](public/favicon.svg)
