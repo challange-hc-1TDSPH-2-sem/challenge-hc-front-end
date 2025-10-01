@@ -32,7 +32,7 @@ npm run dev
 
 ## Links
 - Repositório: https://github.com/challange-hc-1TDSPH-2-sem/challenge-hc-front-end.git
-- Vídeo no YouTube: [adicione o link do vídeo aqui]
+- Vídeo no YouTube: https://www.youtube.com/watch?v=W6WYKu_Qmog
 
 ## Imagens
 
