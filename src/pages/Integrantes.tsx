@@ -18,12 +18,12 @@ export default function Integrantes() {
       <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {integrantes.map((p) => (
           <li key={p.rm} className="card">
-            <div className="w-full h-48 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
+            <div className="w-40 h-40 bg-gray-200 rounded-full mb-4 overflow-hidden mx-auto flex items-center justify-center">
               {p.foto ? (
                 <img 
                   src={p.foto} 
                   alt={`Foto de ${p.nome}`}
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover"
                 />
               ) : (
                 <div className="text-gray-400 text-center">
