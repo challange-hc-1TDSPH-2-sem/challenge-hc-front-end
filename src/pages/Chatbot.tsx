@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const quickActions = [
   { id: 'symptoms', label: 'Descrever Sintomas', icon: '🤒' },
@@ -35,6 +35,23 @@ export default function Chatbot() {
   ])
   const [inputText, setInputText] = useState('')
   const [isTyping, setIsTyping] = useState(false)
+
+  useEffect(() => {
+    document.title = 'Chatbot | HC Emergency Assistant'
+    const saved = sessionStorage.getItem('hc_chat_msgs')
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved)
+        if (Array.isArray(parsed) && parsed.length) {
+          setMessages(parsed.map((m: any) => ({...m, timestamp: new Date(m.timestamp)})))
+        }
+      } catch {}
+    }
+  }, [])
+
+  useEffect(() => {
+    sessionStorage.setItem('hc_chat_msgs', JSON.stringify(messages))
+  }, [messages])
 
   const sendMessage = (text: string) => {
     if (!text.trim()) return
@@ -208,7 +225,7 @@ export default function Chatbot() {
             />
             <button
               onClick={() => sendMessage(inputText)}
-              disabled={!inputText.trim()}
+              disabled={!inputText.trim() || isTyping}
               className="btn-secondary px-6 py-3 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Enviar
