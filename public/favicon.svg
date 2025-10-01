@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" aria-labelledby="title desc" role="img">
+  <title id="title">Ícone HC FMUSP</title>
+  <desc id="desc">Círculo branco com borda azul, cruz azul deslocada levemente para cima e textos HC e FMUSP</desc>
+
+  <!-- fundo circular -->
+  <circle cx="100" cy="100" r="95" fill="#ffffff" stroke="#0B5FA5" stroke-width="6"></circle>
+
+  <!-- cruz médica centralizada, deslocada para cima -->
+  <g fill="#0B5FA5" transform="translate(0, -12)">
+    <rect x="90" y="60" width="20" height="80" rx="3" ry="3"></rect>
+    <rect x="60" y="90" width="80" height="20" rx="3" ry="3"></rect>
+  </g>
+
+  <!-- texto HC -->
+  <text x="100" y="160" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="32" fill="#0B5FA5">HC</text>
+
+  <!-- texto FMUSP -->
+  <text x="100" y="185" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="16" fill="#4a4a4a">FMUSP</text>
+</svg>
