@@ -1,4 +1,9 @@
+import { useEffect } from 'react'
+
 export default function Sobre() {
+  useEffect(() => {
+    document.title = 'Sobre | HC Emergency Assistant'
+  }, [])
   return (
     <section className="space-y-8">
       <div className="text-center">
