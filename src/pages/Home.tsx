@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 export default function Home() {
   const navigate = useNavigate()
   useEffect(() => {
-    document.title = 'HC Emergency Assistant — Home'
+    document.title = 'HC BRIDGE — Home'
   }, [])
   return (
     <section className="space-y-16">
@@ -17,7 +17,7 @@ export default function Home() {
             </span>
           </div>
           <h1 className="heading-xl text-gradient mb-6">
-            HC Emergency Assistant
+            HC BRIDGE
           </h1>
           <p className="text-body text-muted max-w-3xl mx-auto mb-8">
             Chatbot inteligente para auxílio em emergências médicas, marcação de consultas urgentes e orientações de saúde 24 horas por dia.

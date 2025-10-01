@@ -30,7 +30,7 @@ export default function Servicos() {
   }
 
   useEffect(() => {
-    document.title = 'Serviços | HC Emergency Assistant'
+    document.title = 'Serviços | HC BRIDGE'
   }, [])
 
   return (

@@ -8,7 +8,7 @@ export default function ServicoDetalhe() {
   const service = id ? getServiceById(id) : undefined
 
   useEffect(() => {
-    document.title = service ? `${service.title} | HC Emergency Assistant` : 'Serviço não encontrado'
+    document.title = service ? `${service.title} | HC BRIDGE` : 'Serviço não encontrado'
   }, [service])
 
   if (!service) {
