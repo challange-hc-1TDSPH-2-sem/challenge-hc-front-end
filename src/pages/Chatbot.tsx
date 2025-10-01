@@ -37,7 +37,7 @@ export default function Chatbot() {
   const [isTyping, setIsTyping] = useState(false)
 
   useEffect(() => {
-    document.title = 'Chatbot | HC Emergency Assistant'
+    document.title = 'Chatbot | HC BRIDGE'
     const saved = sessionStorage.getItem('hc_chat_msgs')
     if (saved) {
       try {
