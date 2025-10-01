@@ -1,11 +1,21 @@
-import { useState } from 'react'
-import { Link, NavLink, Outlet } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 
 function App() {
   const [open, setOpen] = useState(false)
+  const location = useLocation()
+  // ScrollToTop ao trocar de rota
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }, [location.pathname])
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200/60 shadow-soft">
+      <a href="#conteudo" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-blue-600 text-white px-3 py-2 rounded">
+        Pular para o conteúdo
+      </a>
+      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200/60 shadow-soft" role="banner">
         <div className="container-app">
           <div className="h-20 flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-3 group">
@@ -48,13 +58,13 @@ function App() {
         </div>
       </header>
 
-      <main className="flex-1">
+      <main id="conteudo" className="flex-1" role="main">
         <div className="container-app py-10">
           <Outlet />
         </div>
       </main>
 
-      <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12 mt-20">
+      <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12 mt-20" role="contentinfo">
         <div className="container-app">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
