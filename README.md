@@ -31,11 +31,9 @@ npm run dev
 - Murilo Fernandes Carapia - RM: 564969 - 1TDSPH
 
 ## Links
-- Repositório: [adicione o link do GitHub aqui]
+- Repositório: https://github.com/challange-hc-1TDSPH-2-sem/challenge-hc-front-end.git
 - Vídeo no YouTube: [adicione o link do vídeo aqui]
 
 ## Imagens
-
-Adicione ao menos duas imagens da aplicação rodando (Home e Serviços, por exemplo):
 
 ![Home](public/favicon.svg)
