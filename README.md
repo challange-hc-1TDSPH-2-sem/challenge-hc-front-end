@@ -37,3 +37,8 @@ npm run dev
 ## Imagens
 
 ![Home](public/favicon.svg)
+
+## Assets
+
+- Utilizamos como favicon um arquivo em formato **SVG** (`public/favicon.svg`).
+- Para ilustrações e ícones dentro das páginas, optamos por utilizar **emojis** (ex.: 🚨, 🤖, 📅, etc.), garantindo leveza e evitando dependência de bibliotecas externas de ícones.
