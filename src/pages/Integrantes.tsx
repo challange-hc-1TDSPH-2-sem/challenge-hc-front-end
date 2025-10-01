@@ -3,11 +3,12 @@ type Integrante = {
   rm: string
   turma: string
   foto?: string
+  github?: string
 }
 
 const integrantes: Integrante[] = [
-  { nome: 'Pedro De Matos', rm: '564184', turma: '1TDSPH', foto: '/membros/membro3.jpg' },
-  { nome: 'João Vitor Lacerda', rm: '565565', turma: '1TDSPH', foto: '/membros/membro1.jpg' },
+  { nome: 'Pedro De Matos', rm: '564184', turma: '1TDSPH', foto: '/membros/membro3.jpg', github: 'https://github.com/PedroPrevitali' },
+  { nome: 'João Vitor Lacerda', rm: '565565', turma: '1TDSPH', foto: '/membros/membro1.jpg', github: 'https://github.com/joaolacerdaconsorte' },
   { nome: 'Murilo Fernandes Carapia', rm: '564969', turma: '1TDSPH', foto: '/membros/membro2.png' },
 ]
 
@@ -34,7 +35,15 @@ export default function Integrantes() {
                 </div>
               )}
             </div>
-            <p className="font-semibold text-lg">{p.nome}</p>
+            <p className="font-semibold text-lg">
+              {p.github ? (
+                <a href={p.github} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                  {p.nome}
+                </a>
+              ) : (
+                p.nome
+              )}
+            </p>
             <p className="text-sm text-gray-600 mt-1">RM: {p.rm}</p>
             <p className="text-sm text-gray-600">Turma: {p.turma}</p>
           </li>
