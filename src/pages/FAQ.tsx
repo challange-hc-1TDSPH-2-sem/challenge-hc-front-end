@@ -38,7 +38,7 @@ const faqs = [
 
 export default function FAQ() {
   useEffect(() => {
-    document.title = 'FAQ | HC Emergency Assistant'
+    document.title = 'FAQ | HC BRIDGE'
   }, [])
   return (
     <section>

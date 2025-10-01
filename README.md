@@ -1,4 +1,4 @@
-# HC Bridge - Sprint 03
+# HC BRIDGE - Sprint 03
 
 Solução integrada ao Portal do Paciente HC para facilitar o acesso às ferramentas de saúde digital. Aplicação SPA construída com `React + Vite + TypeScript` e estilizada com `TailwindCSS`.
 
