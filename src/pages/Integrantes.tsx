@@ -6,9 +6,9 @@ type Integrante = {
 }
 
 const integrantes: Integrante[] = [
-  { nome: 'Pedro De Matos', rm: '564184', turma: '1TDSPH' },
-  { nome: 'João Vitor Lacerda', rm: '565565', turma: '1TDSPH' },
-  { nome: 'Murilo Fernandes Carapia', rm: '564969', turma: '1TDSPH' },
+  { nome: 'Pedro De Matos', rm: '564184', turma: '1TDSPH', foto: '/membro3.jpg' },
+  { nome: 'João Vitor Lacerda', rm: '565565', turma: '1TDSPH', foto: '/membro1.jpg' },
+  { nome: 'Murilo Fernandes Carapia', rm: '564969', turma: '1TDSPH', foto: '/membro2.png' },
 ]
 
 export default function Integrantes() {
