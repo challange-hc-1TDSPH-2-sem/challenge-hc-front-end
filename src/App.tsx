@@ -42,6 +42,7 @@ function App() {
               <NavLink to="/sobre" className={({ isActive }) => `px-4 py-2 rounded-xl font-medium transition-all duration-300 ${isActive ? 'bg-blue-100 text-blue-700 shadow-soft' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'}`}>Sobre</NavLink>
               <NavLink to="/faq" className={({ isActive }) => `px-4 py-2 rounded-xl font-medium transition-all duration-300 ${isActive ? 'bg-blue-100 text-blue-700 shadow-soft' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'}`}>FAQ</NavLink>
               <NavLink to="/integrantes" className={({ isActive }) => `px-4 py-2 rounded-xl font-medium transition-all duration-300 ${isActive ? 'bg-blue-100 text-blue-700 shadow-soft' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'}`}>Integrantes</NavLink>
+              <NavLink to="/contato" className={({ isActive }) => `px-4 py-2 rounded-xl font-medium transition-all duration-300 ${isActive ? 'bg-blue-100 text-blue-700 shadow-soft' : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'}`}>Contato</NavLink>
             </nav>
           </div>
           {open && (
@@ -53,6 +54,7 @@ function App() {
               <NavLink onClick={() => setOpen(false)} to="/sobre" className={({ isActive }) => `block px-3 py-2 rounded-md ${isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-700 hover:bg-gray-100'}`}>Sobre</NavLink>
               <NavLink onClick={() => setOpen(false)} to="/faq" className={({ isActive }) => `block px-3 py-2 rounded-md ${isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-700 hover:bg-gray-100'}`}>FAQ</NavLink>
               <NavLink onClick={() => setOpen(false)} to="/integrantes" className={({ isActive }) => `block px-3 py-2 rounded-md ${isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-700 hover:bg-gray-100'}`}>Integrantes</NavLink>
+              <NavLink onClick={() => setOpen(false)} to="/contato" className={({ isActive }) => `block px-3 py-2 rounded-md ${isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-700 hover:bg-gray-100'}`}>Contato</NavLink>
             </nav>
           )}
         </div>
