@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import FaqItem from '../components/FaqItem'
 
 const faqs = [
   { 
@@ -44,10 +45,7 @@ export default function FAQ() {
       <h1 className="text-3xl font-bold mb-6">FAQ</h1>
       <div className="space-y-3">
         {faqs.map((item) => (
-          <details key={item.q} className="card">
-            <summary className="cursor-pointer font-medium select-none">{item.q}</summary>
-            <p className="mt-2 text-gray-700">{item.a}</p>
-          </details>
+          <FaqItem key={item.q} question={item.q} answer={item.a} />
         ))}
       </div>
     </section>
