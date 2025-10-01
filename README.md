@@ -40,11 +40,11 @@ npm run dev
 
 Integrantes (fotos usadas na página):
 
-![João Vitor Lacerda](public/membros/membro1.jpg)
+![João Vitor Lacerda](public/membros/membro1.png)
 
 ![Murilo Fernandes Carapia](public/membros/membro2.png)
 
-![Pedro De Matos](public/membros/membro3.jpg)
+![Pedro De Matos](public/membros/membro3.png)
 
 ## Assets
 
